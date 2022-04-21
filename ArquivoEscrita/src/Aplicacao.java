@@ -7,7 +7,7 @@ import java.io.IOException;
 public class Aplicacao {
 
 	public static void main(String[] args) throws IOException {
-		String txt = "Hello, world!";		
+		String txt = "Hello, world!!";		
 		
 		// esse try nos possibilita escrever.
 		try (BufferedWriter digitar = new BufferedWriter(new FileWriter("arquivoTeste.txt"))){

@@ -1,4 +1,4 @@
-package Exercicio3;
+package Exercicio03;
 
 public class Fatorial {
 	public int fatorial(int num) {

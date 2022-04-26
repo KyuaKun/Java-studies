@@ -1,4 +1,4 @@
-package ControlerViewer;
+
 
 public class Boleto {
 	protected int id;

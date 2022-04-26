@@ -1,4 +1,4 @@
-package ControlerViewer;
+
 
 public class Pessoa {
 	protected String eMail, nome, sobrenome;

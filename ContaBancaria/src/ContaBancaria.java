@@ -1,4 +1,4 @@
-package ControlerViewer;
+
 
 public class ContaBancaria{
 	protected int contaCorrente, agencia;

@@ -1,4 +1,4 @@
-package ControlerViewer;
+
 
 public class Endereco{
 	protected String municipio, estado, bairro;

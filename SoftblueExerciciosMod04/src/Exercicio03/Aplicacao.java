@@ -20,7 +20,6 @@ public class Aplicacao {
 		System.out.println("A área do triângulo é: "+ tri1.calcularArea());
 		System.out.println("A área do quadrado é: "+ quad1.calcularArea());
 		System.out.println("A área do trapézio é: "+ trap1.calcularArea());
-		System.out.println("A área do circulo é: "+ circu1.calcularArea());
-		
+		System.out.println("A área do circulo é: "+ circu1.calcularArea());		
 	}
 }

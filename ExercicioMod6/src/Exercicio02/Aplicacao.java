@@ -6,20 +6,20 @@ public class Aplicacao {
 		
 		Veiculo hondaCivicG10 = new Automovel();
 		hondaCivicG10.desligar();
-		System.out.println("Está ligado?: "+ hondaCivicG10.getLigado() + "\n");
+		hondaCivicG10.estadoVeiculo();
 		hondaCivicG10.ligar();
-		System.out.println("Está ligado?: "+ hondaCivicG10.getLigado() + "\n");
+		hondaCivicG10.estadoVeiculo();
 		
 		Veiculo xre600c = new Motocicleta();
 		xre600c.desligar();
-		System.out.println("Está ligado?: "+ xre600c.getLigado() + "\n");
+		xre600c.estadoVeiculo();
 		xre600c.ligar();
-		System.out.println("Está ligado?: "+ xre600c.getLigado() + "\n");
+		xre600c.estadoVeiculo();
 		
 		Veiculo mercedes = new Onibus();
 		mercedes.desligar();
-		System.out.println("Está ligado?: "+ mercedes.getLigado() + "\n");
+		mercedes.estadoVeiculo();
 		mercedes.ligar();
-		System.out.println("Está ligado?: "+ mercedes.getLigado() + "\n");
+		mercedes.estadoVeiculo();
 	}
 }

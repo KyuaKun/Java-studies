@@ -5,15 +5,17 @@ public class Automovel extends Veiculo {
 	@Override
 	public void ligar() {
 		super.ligar();
-		System.out.println("Automóvel ligado.");
+		System.out.println("Ligando automóvel.");
 	}
 
 	@Override
 	public void desligar() {
 		super.desligar();
-		System.out.println("Automóvel desligado.");
+		System.out.println("Desligando automóvel.");
 	}
 
-	
-	
+	@Override
+	public void estadoVeiculo() {
+		super.estadoVeiculo();
+	}
 }

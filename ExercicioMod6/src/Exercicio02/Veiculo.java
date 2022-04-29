@@ -14,5 +14,8 @@ public class Veiculo {
 	public void desligar() {
 		ligado = false;
 	}
-
+	
+	public void estadoVeiculo() {
+		System.out.println("Esta ligado? " + getLigado() + "\n");
+	}
 }

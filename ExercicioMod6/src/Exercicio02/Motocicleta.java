@@ -5,13 +5,17 @@ public class Motocicleta extends Veiculo  {
 	@Override
 	public void ligar() {
 		super.ligar();
-		System.out.println("Motocicleta ligado.");
+		System.out.println("Ligando motocicleta.");
 	}
 
 	@Override
 	public void desligar() {
 		super.desligar();
-		System.out.println("Motocicleta desligado.");
+		System.out.println("Desligando motocicleta.");
 	}
-
+	
+	@Override
+	public void estadoVeiculo() {
+		super.estadoVeiculo();
+	}
 }

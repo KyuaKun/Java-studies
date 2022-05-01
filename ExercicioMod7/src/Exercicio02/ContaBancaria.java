@@ -8,19 +8,19 @@ public abstract class ContaBancaria {
 	}
 
 	void depositar(double valor) {
-		saldo+= valor;
+		saldo += valor;
 	}
-	
-	void sacar (double valor) {
+
+	void sacar(double valor) {
 		saldo -= valor;
 	}
-	
-	void transferir (double valor, ContaBancaria conta) {
+
+	void transferir(double valor, ContaBancaria conta) {
 		sacar(valor);
-		conta.transferir(valor, conta);
+		conta.depositar(valor);
 	}
-	
+
 	void calcularSaldo() {
-		
+
 	}
 }

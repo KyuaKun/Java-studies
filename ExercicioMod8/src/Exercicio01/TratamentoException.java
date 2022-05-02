@@ -1,7 +1,7 @@
 package Exercicio01;
 
 public class TratamentoException {
-	public void realizarSaque(double valor) {
+	public void realizarSaque(double valor, ContaBancaria conta) {
 		ContaBancaria cb = new ContaBancaria();
 		
 		try {
@@ -14,7 +14,7 @@ public class TratamentoException {
 		}
 	}
 	
-	public void realizarDeposito(double valor) {
+	public void realizarDeposito(double valor, ContaBancaria conta) {
 		ContaBancaria cb = new ContaBancaria();
 		
 		try {

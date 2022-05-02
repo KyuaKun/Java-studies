@@ -3,7 +3,7 @@ package Exercicio01;
 public class ContaBancaria {
 
 	private double saldo;
-	private double nome;
+	private String nome;
 	
 	
 	public double getSaldo() {
@@ -12,18 +12,12 @@ public class ContaBancaria {
 	
 	
 	
-	public double getNome() {
+	public String getNome() {
 		return nome;
 	}
 
 
-
-	public void setNome(double nome) {
-		this.nome = nome;
-	}
-
-
-	public ContaBancaria(double nome) {
+	public ContaBancaria(String nome) {
 		this.nome = nome;
 	}
 	
@@ -38,7 +32,7 @@ public class ContaBancaria {
 		}
 
 		saldo -= valor;
-		System.out.printf("Saque de %.2f R$ realizado com sucesso! Saldo atual: %.2f R$ %n%n", valor, saldo);
+		System.out.printf("Saque de %.2f R$ realizado com sucesso! Saldo atual de: %.2f R$ %n%n", valor, saldo);
 	}
 
 	public void depositar(double valor) throws ValorInvalidoException {
@@ -47,7 +41,7 @@ public class ContaBancaria {
 		}
 
 		saldo += valor;
-		System.out.printf("Deposito de %.2f R$ feito na sua conta! Saldo atual: %.2f R$ %n%n", valor, saldo);
+		System.out.printf("%s realizou um deposito de %.2f R$ na sua conta! Saldo atual de: %.2f R$ %n%n", nome, valor, saldo);
 		
 	}
 
@@ -55,6 +49,6 @@ public class ContaBancaria {
 			throws ValorInvalidoException, SaldoInsuficienteException {
 		sacar(valor);
 		conta.depositar(valor);
-		System.out.printf("Transferência de %.2f realizada com sucesso! %n%n");
+		System.out.printf("%s realizou uma transferência de %.2f R$! %n%n", nome , valor);
 	}
 }

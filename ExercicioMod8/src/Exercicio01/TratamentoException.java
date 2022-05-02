@@ -2,10 +2,9 @@ package Exercicio01;
 
 public class TratamentoException {
 	public void realizarSaque(double valor, ContaBancaria conta) {
-		ContaBancaria cb = new ContaBancaria();
 		
 		try {
-			cb.sacar(valor);
+			conta.sacar(valor);
 		} catch (ValorInvalidoException e) {
 			System.out.printf("Valores negativos não podem ser sacados. Você tentou sacar: %.2f R$ %n%n" , e.getValor());
 			
@@ -15,10 +14,9 @@ public class TratamentoException {
 	}
 	
 	public void realizarDeposito(double valor, ContaBancaria conta) {
-		ContaBancaria cb = new ContaBancaria();
 		
 		try {
-			cb.depositar(valor);
+			conta.depositar(valor);
 		} catch (ValorInvalidoException e) {
 			System.out.printf("Valores negativos não podem ser depositados. "
 					+ "Você tentou depositar: %.2f R$. Tenta novamente com um valor válido %n%n", e.getValor());
@@ -26,11 +24,10 @@ public class TratamentoException {
 		}
 	}
 	
-	public void realizarTransferencia(double valor, ContaBancaria conta) {
-		ContaBancaria cb = new ContaBancaria();
+	public void realizarTransferencia(double valor, ContaBancaria conta, ContaBancaria contaDestino) {
 		
 		try {
-			cb.transferir(valor, conta);
+			conta.transferir(valor, contaDestino);
 		} catch (ValorInvalidoException e) {
 			System.out.println("Transferência inválida. \n");
 		} catch (SaldoInsuficienteException e) {

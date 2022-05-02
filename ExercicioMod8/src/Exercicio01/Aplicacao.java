@@ -10,6 +10,10 @@ public class Aplicacao {
 		ContaBancaria conta2 = new ContaBancaria();
 		ContaBancaria conta3 = new ContaBancaria();
 		
-		trat.realizarDeposito(-2000, conta3);
+		trat.realizarDeposito(-2000, conta1);
+		trat.realizarSaque(200, conta2);
+		trat.realizarTransferencia(50, conta1, conta3);
+		
+		trat.realizarDeposito(100, conta1);
 	}
 }

@@ -1,5 +1,17 @@
 package Exercicio01;
 
-public class ValorInvalidoException {
 
+@SuppressWarnings("serial")
+public class ValorInvalidoException extends Exception {
+	private double valor;
+
+	public double getValor() {
+		return valor;
+	}
+
+	public ValorInvalidoException(double valor) {
+		this.valor = valor;
+	}
+	
+	
 }

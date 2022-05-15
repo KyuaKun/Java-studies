@@ -11,7 +11,6 @@ public class ContaBancaria {
 	}
 	
 	
-	
 	public String getNome() {
 		return nome;
 	}
